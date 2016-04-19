@@ -53,6 +53,7 @@ shopt -u extglob
 
 
 status "Setting up nginx"
+echo "Hello from the compile script"
 tar xzf $compile_nginx_tgz
 cp -f $compile_buildpack_dir/conf/nginx.conf nginx/conf/nginx.conf
 cp -f $compile_buildpack_dir/conf/mime.types nginx/conf/mime.types
